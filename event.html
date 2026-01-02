@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Event Schedule & Registration</title>
+</head>
+<body>
+
+    <h1>Annual Tech Conference 2026</h1>
+    <h2>Event Schedule</h2>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10:00 AM</td>
+                <td>Opening Ceremony</td>
+                <td>Main Hall</td>
+            </tr>
+            <tr>
+                <td>11:30 AM</td>
+                <td>Web Development Workshop</td>
+                <td>Lab 1</td>
+            </tr>
+            <tr>
+                <td>2:00 PM</td>
+                <td>AI & Machine Learning Talk</td>
+                <td>Conference Room</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Event Registration</h2>
+
+    <form action="submit.html" method="post">
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="number">Number:</label><br>
+        <input type="number" id="number" name="number"><br><br>
+
+        <label for="eventdate">Event Date:</label><br>
+        <input type="date" id="eventdate" name="eventdate"><br><br>
+
+        <label>Ticket Type:</label><br>
+        <input type="radio" id="standard" name="ticket" value="Standard">
+        <label for="standard">Standard</label><br>
+
+        <input type="radio" id="vip" name="ticket" value="VIP">
+        <label for="vip">VIP</label><br>
+
+        <input type="radio" id="student" name="ticket" value="Student">
+        <label for="student">Student</label><br><br>
+
+        <label>Workshop Preferences:</label><br>
+        <input type="checkbox" id="html" name="workshop[]" value="HTML">
+        <label for="html">HTML & CSS</label><br>
+
+        <input type="checkbox" id="js" name="workshop[]" value="JavaScript">
+        <label for="js">JavaScript</label><br>
+
+        <input type="checkbox" id="ai" name="workshop[]" value="AI">
+        <label for="ai">AI Basics</label><br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
