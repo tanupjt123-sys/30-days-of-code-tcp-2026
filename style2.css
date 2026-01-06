@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #222;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #00bcd4;
+}
+
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.hero-title {
+    font-size: 40px;
+    animation: slideUp 1s ease;
+}
+
+.hero-text {
+    margin: 15px 0;
+}
+
+.cta-btn {
+    padding: 12px 25px;
+    border: none;
+    background: #00bcd4;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.cta-btn:hover {
+    transform: scale(1.1);
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px;
+    background: #f9f9f9;
+}
+
+.price-box {
+    background: white;
+    padding: 30px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.price-box:hover {
+    transform: scale(1.08);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .features, .pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+}
